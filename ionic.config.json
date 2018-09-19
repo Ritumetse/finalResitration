@@ -1,0 +1,7 @@
+{
+  "name": "finalResitration",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

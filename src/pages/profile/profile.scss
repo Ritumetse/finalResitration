@@ -1,0 +1,30 @@
+page-profile {
+    ion-content {
+        background: url(../assets/imgs/hello.png) no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        .item-md, .item-ios {
+          background: none;
+        }
+}
+.container{
+    color:  #708090;
+    
+
+}
+.profile-image{
+
+    img{
+
+        height: 200px;
+        width: 200px;
+        border-radius:30px;
+        border: 4px solid #708090 ;
+    }
+
+    text-align: center;
+
+}
+}
+

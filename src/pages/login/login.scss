@@ -1,0 +1,20 @@
+page-login {
+    ion-content {
+        background: url(../assets/imgs/hello.png) no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        .item-md, .item-ios {
+          background: none;
+        }
+    }
+    .name{
+        background-color: transparent;
+ 
+    }
+    .password{
+        background-color: transparent;
+      
+        
+    }
+}

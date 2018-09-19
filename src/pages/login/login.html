@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="Pogisho">
+    <ion-title align="center">Welcome</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="background">
+ 
+    <div class ="Container" align="center">
+      <ion-row>
+        <ion-item class ="name">
+          <ion-icon name="person" item-start></ion-icon>
+          <ion-input type="text" [(ngModel)]="email" placeholder="Username"></ion-input>
+        </ion-item>
+
+        <ion-item class ="password">
+            <ion-icon name="lock" item-start></ion-icon>
+          <ion-input type="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+        </ion-item>
+      </ion-row>
+      <button ion-button color="light" (click)="signIN()" outline round>Sign In</button>
+      <button ion-button color="light" (click)="login()" outline round ><ion-icon name="logo-google"></ion-icon>  Sign In with google account</button>
+      <p class="p">Already have an account?<a class="a" (click)="signUp()"><ion-icon name="person-add"></ion-icon>Sign Up</a>
+      
+      </p>
+    </div>
+</ion-content>
+
+
+

@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar color="Pogisho">
+    <ion-title align="center">profile</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()"><ion-icon name="exit"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="container" align-text ="center">
+    <div>
+      <div class="profile-image">
+          <img [src]="base64Image">
+      </div>
+    </div>
+    <div>
+        <button ion-button round outline small color="light" (click)="cameraPhoto()">Take a photo</button><br>
+      <button ion-button round outline small color="light" (click)="galleryPhoto()">Choose from Gallery</button><br>
+     
+    </div>
+
+    <ion-list no-lines> 
+      <ion-item>
+      <ion-label floating>
+       <ion-icon name="person" item-start></ion-icon>firstname</ion-label>
+      <ion-input type="text" [(ngModel)]="firstname" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>
+        <ion-icon name="person" item-start></ion-icon>lastname</ion-label>
+        <ion-input type="text" [(ngModel)]="lastname"  ></ion-input>
+      </ion-item>
+      <button ion-button round outline color="light" (click)="submit()" >Submit</button>
+    </ion-list>
+  </div>
+</ion-content>
+
+
+
